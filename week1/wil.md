@@ -1,14 +1,24 @@
-### 이번주에 학습한 내용
-```
 # 금주 학습 내용
+
 1주차 웹 스터디에서는 홍익대학교 축제기간이었던 만큼 축제 라인업 페이지를 작성자의 기호에 맞게 html언어부터, js코드 작성까지 실습해보는 시간을 가졌습니다. 
-* 하나의 객체 선언 및 참조를 이용하는 내용을 바탕으로 hongikFestival **객체 선언** 및 '.'연산자를 사용하여 참조하기도 했고, 
+
+* 하나의 객체 선언 및 참조를 이용하는 내용을 바탕으로 `hongikFestival` **객체 선언** 및 `.`연산자를 사용하여 참조하기도 했고, 
 * 타입명을 따로 지정해주지 않아도 된다는 js의 편리함도 알게 되었습니다. 
 
 특히 타입명을 지정하지 않아도 된다는 점에서 **let** 명령어를 이용하여 선언 및 초기화를 설정해 주는 내용이 C와 C++만 사용해왔던 저에게는 신선한 충격으로 다가오게 되어 흥미로웠습니다. 
 
-``` array 
-## js 배열에 대하여
+---
+
+## JS 배열에 대하여
+
 * let lineup = ["DynamicDuo","Dragonpony"]; 처럼 간단하게 선언 및 초기화가 가능하다. 
 * let lineup; lineup = ["DynamicDuo","Dragonpony"]; 선언 및 초기화를 다른 step 또는 phase에서 구현할 수도 있다. 
-* 그리고 js에서는 배열의 요소 개수에 대한 제한을 따로 두지 않는다....
+* 그리고 js에서는 배열의 요소 개수에 대한 제한을 따로 두지 않는다. 프로그램 실행 중에 요소가 추가되면 동적으로 메모리가 늘어나는 구조를 가진다. 
+
+### 실습 코드 
+```javascript
+let dynamicDuoTag = document.createElement("p");
+dynamicDuoTag.innerText = hongikFestival.lineup.day1[0];
+dynamicDuoTag.style.color = "red";
+dynamicDuoTag.style.fontSize = "30px";
+dynamicDuoTag.style.fontWeight = "900";
