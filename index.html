@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 홍익대학교 축제</title>
+<style>
+  /* 1. 웹페이지 전체 배경을 붉은색 그라데이션으로 가득 채우고 가운데 정렬 준비 */
+  body {
+    margin: 0;
+    padding: 40px 0;
+    /* 어두운 붉은색에서 생생한 붉은색으로 변하는 고급스러운 그라데이션 */
+    background: linear-gradient(135deg, #2b0000, #8b0000, #e60000); 
+    background-attachment: fixed; /* 스크롤 해도 배경 고정 */
+    color: white; /* 기본 글자색은 흰색 */
+    font-family: '맑은 고딕', sans-serif;
+    
+    /* 화면 정중앙 정렬 세팅 */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start;
+    min-height: 100vh;
+  }
+
+  /* 2. 상단 텍스트(제목) 스타일링 및 가운데 정렬 */
+  h1 {
+    font-size: 42px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 글자 뒤 그림자 효과 */
+    text-align: center;
+  }
+
+  body > p {
+    font-size: 20px;
+    color: #ffcccc; /* 부드러운 연분홍빛 글씨 */
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  /* 3. 자바스크립트로 만든 대형 카드(800px)들이 세로로 이쁘게 정렬될 구역 */
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 카드들을 가로 기준 정중앙에 배치 */
+    gap: 30px; /* 카드와 카드 사이의 넉넉한 간격 */
+    width: 100%;
+  }
+
+  /* 축제 라인업이라는 안내 텍스트 스타일 */
+  .lineup-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffd700; /* 금색 포인트 */
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 800px; /* 카드 크기와 통일 */
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<h1>2026 홍익대학교 축제</h1>
+<b>
+<p>5월 13일 - 15일, 3일간</p>
+</b>
+<!-- 스크립트가 카드를 집어넣을 부모 section입니다. -->
+
+<section>
+  <div class="lineup-title">축제 라인업</div>
+</section>
+
+<script src="./scripts.js"></script>
+</body>
+</html>
