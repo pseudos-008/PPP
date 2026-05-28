@@ -6,14 +6,18 @@ function render(data) {
     root.innerHTML = ""; 
 
     for (let i = 0; i < data.length; i++) {
+        let card = document.createElement("div");
+        card.className = "card";
+
         let h2 = document.createElement("h2");
         let p = document.createElement("p");
         
         h2.innerText = data[i].title;
         p.innerText = data[i].body;
         
-        root.appendChild(h2);
-        root.appendChild(p);
+        card.appendChild(h2);
+        card.appendChild(p);
+        root.appendChild(card);
     }
 }
 
@@ -21,14 +25,18 @@ function renderTodos(data) {
     root.innerHTML = ""; 
 
     for (let i = 0; i < data.length; i++) {
+        let card = document.createElement("div");
+        card.className = "card";
+
         let h2 = document.createElement("h2");
         let p = document.createElement("p");
         
         h2.innerText = `✔️ 할 일: ${data[i].title}`;
         p.innerText = `상태: ${data[i].completed ? "✅ 완료" : "❌ 미완료"}`;
         
-        root.appendChild(h2);
-        root.appendChild(p);
+        card.appendChild(h2);
+        card.appendChild(p);
+        root.appendChild(card);
     }
 }
 
