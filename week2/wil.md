@@ -18,7 +18,8 @@
 
 ### 3. 실습 결과물 배포 링크
 
-* **Vercel 배포 URL**: [https://ppp-six-tau.vercel.app](https://ppp-six-tau.vercel.app) 
+* **Vercel 배포 URL**: "ppp-alpha-roan.vercel.app";
+ 
 
 
 ## 4. 핵심 자바스크립트 소스 코드
