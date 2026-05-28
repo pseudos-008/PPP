@@ -20,8 +20,9 @@
 ```
 **Vercel 배포 URL**: [https://ppp-six-tau.vercel.app](https://ppp-six-tau.vercel.app) 
 
+
 ## 4. 핵심 자바스크립트 소스 코드
-```
+```javascript
 let root = document.getElementById("root");
 let postsButton = document.getElementById("posts");
 let todosButton = document.getElementById("todos-btn"); 
