@@ -18,7 +18,7 @@
 
 ### 3. 실습 결과물 배포 링크
 
-* **Vercel 배포 URL**: ppp-alpha-roan.vercel.app;
+* **Vercel 배포 URL**: [실습 결과물 배포 링크](https://ppp-alpha-roan.vercel.app);
  
 
 
